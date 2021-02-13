@@ -1,0 +1,260 @@
+@media screen and ( max-width: 1220px )
+    .ministry__desc
+        max-width: 55%
+        margin-right: 50px
+    .place
+        &__text
+            font-size: 50px
+            line-height: 56px
+            margin-bottom: 20px
+
+        &__desc
+            position: static
+            margin-bottom: 20px
+        &__way
+            display: block
+            margin: 0 auto
+            position: static
+    .footer
+        &__name
+            .footer-logo img
+                margin-right: 10px
+
+    .contact
+        h2
+            padding: 20px
+            font-size: 50px
+            line-height: 42px
+        &__name,
+        &__town,
+        &__street
+            font-size: 38px
+        &__info
+            flex-direction: column
+            a
+                font-size: 32px
+                border: none
+                &::after
+                    display: none
+        &__address::after,
+            display: none
+        &__feedback::after
+            display: none
+        &__span__box
+            margin: 20px 0 20px 0
+            span
+                height: 40px
+                width: 40px
+        &__feedback
+            &__name
+                font-size: 60px
+            form
+                padding: 30px
+            input
+                width: 100%
+                font-weight: 200
+
+@media screen and ( max-width: 920px )
+    .contact
+        .container
+            margin: 0
+        h2
+            font-size: 38px
+            border-bottom: 1px solid #000
+            margin-bottom: 10px
+        &__name, &__town, &__street, &__info a
+            font-size: 24px
+        &__feedback__name
+            font-size: 40px
+        &__address
+            padding: 0
+        &__feedback
+            padding-bottom: 80px
+    .header
+        display: none
+    .top .contacts__map
+        height: 250px
+    .top
+        position: static
+        right: 0
+        width: 100%
+        height: 250px
+
+    .home__logo
+        display: none
+    .ministry
+        .container
+            padding: 0
+        &__desc
+            max-width: 40%
+        h2
+            font-size: 50px
+        &__name
+            font-size: 32px
+        &__img
+            height: 400px
+    .footer
+        &__inner
+            display: flex
+            flex-direction: column
+        &__info
+            display: none
+        &__media__info
+            display: block
+            margin-bottom: 0px
+            .footer__contacts
+                display: flex
+                justify-content: space-between
+        &__menu
+            padding-top: 0
+            margin-bottom: 20px
+            li
+                padding-top: 20px
+                a
+                    font-size: 15px
+                    line-height: 18px
+        &__nav li:nth-child(9), .footer__nav li:nth-child(10)
+            top: 140px
+        h6
+            padding-top: 20px
+        h6,
+        &__connect__phone,
+        &__connect__mail
+            position: relative
+        h6::before,
+        &__connect__phone::before,
+        &__connect__mail::before
+            width: 20px
+            height: 20px
+            position: absolute
+            left: 0
+        h6::before
+            content: url(../img/location.svg)
+        &__connect__phone::before
+            content: url(../img/call.svg)
+        &__connect__mail::before
+            content: url(../img/message.svg)
+        &__connect__phone,
+        &__connect__mail,
+        &__adress__church,
+        h6
+            padding-left: 30px
+            order: -2
+            margin-bottom: 10px
+        &-logo
+            display: none
+        .media__donat
+            display: block
+            margin: 0 auto 20px auto
+    .place
+        .container
+            padding: 0 
+    
+@media screen and ( max-width: 770px )
+    .place
+        border: none
+        padding: 0
+        margin-bottom: 30px
+        .place__inner
+            padding: 0 20px
+            .place__img
+                display: none
+            .place__text
+                font-weight: 200
+                font-size: 24px
+                line-height: 28px
+                margin-bottom: 20px
+            .place__desc
+                display: none
+            .place__way
+                display: block
+                margin: 0 auto
+                position: static
+
+    .ministry
+        h2
+            font-size: 25px
+            line-height: 28px
+            padding: 20px 0 20px 0
+        .ministry__inner
+            padding: 20px 20px
+            margin-bottom: 20px
+        .ministry__desc
+            margin: 0
+            min-width: 300px
+        .ministry__name
+            font-size: 24px
+            line-height: 28px
+            padding-bottom: 20px
+        .ministry__text
+            font-size: 16px
+        .ministry__img
+            max-height: 300px
+            width: 250px
+
+    .top .contacts__map
+        height: 250px
+    .contact
+        &__feedback
+            padding-bottom: 20px
+            form
+                padding-bottom: 50px
+                button
+                    bottom: 20px
+                    right: 0
+                    left: 0
+                    margin: auto
+                    width: 160px
+                    text-align: center
+                    padding: 10px 30px
+
+@media screen and ( max-width: 590px )
+
+    .ministry
+        &__desc
+            max-width: 90%
+        &__img
+            display: none
+
+    .footer
+        &__media__info
+            .footer__contacts
+                flex-direction: column
+
+@media screen and ( max-width: 480px )
+    .contact__name, .contact__town, .contact__street, .contact__info a
+        font-size: 18px
+    .contact__feedback__name
+        font-size: 32px
+    .contact__feedback input
+        font-size: 20px
+    .footer
+        padding-left: 20px
+        .container
+            padding-right: 20px
+        &__menu
+            margin-bottom: 10px
+        &__menu li a
+            font-size: 13px
+        &__nav li:nth-child(9), .footer__nav li:nth-child(10)
+            top: 124px
+            font-size: 16px
+            max-width: 130px
+        &__nav li:nth-child(9) a, .footer__nav li:nth-child(10) a
+            font-weight: 100
+            font-size: 12px
+        &__nav li:nth-child(10)
+            left: 150px
+        &__desc
+            font-size: 10px
+            margin: 0 auto
+        & .media__donat
+            width: 200px
+            padding: 10px 30px
+
+@media screen and ( max-width: 400px )
+
+    .contact .container
+        padding: 0 30px
+        margin: 0
+

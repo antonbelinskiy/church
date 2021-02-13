@@ -1,0 +1,818 @@
+@import "vars"
+@import "font"
+@import "global"
+
+//start header
+.body-lock
+  overflow-y: scroll
+  position: fixed
+.header__new.header
+	height: 460px
+.header
+	height: 100vh
+	background-color: $black
+	overflow: -moz-scrollbars-none
+	-ms-overflow-style: none
+	::-webkit-scrollbar
+    width: 0px
+	&__inner
+		height: 100vh
+		display: flex
+		justify-content: space-between
+	&__nav__menu
+		position: fixed
+		top: 0
+		right: 0
+		bottom: 0
+		z-index: 1
+		left: -100%
+		background-color: $black
+		height: 100vh
+		width: calc(100% - 70px)
+		transition: all 1.4s
+	&__top
+		display: flex
+		justify-content: space-between
+		align-items: center
+		margin: 40px 120px 36px 50px
+		&-donat
+			background-color: $white
+			color: $black
+			&:hover
+				background-color: $yellow
+				color: $white
+	&__bottom-menu
+		border-top: 1px solid $white
+		padding-left: 90px
+		display: flex
+		a
+			
+			&:hover
+				color: $yellow
+		ul
+			li
+				ul
+					border: none
+					display: none
+					li
+						height: 38px
+						width: fit-content
+						padding: 4px 0
+						border: none
+						&:first-child
+							margin-top: 15px
+						&:last-child
+							padding-bottom: 0
+					a
+						font-size: 24px
+				ul.active
+					display: block
+		.sub
+			position: relative
+		.sub > a::before
+			position: absolute
+			background-repeat: no-repeat
+			background-position: center
+			content: ' '	
+			background-image: url('../img/plus.svg')
+			right: 32px
+			top: 32px
+			width: 29px
+			height: 29px
+			display: block
+		.sub.slide > a::before
+			background-image: url('../img/minus.svg')
+		.sub > button
+			position: absolute
+			right: 32px
+			top: 32px
+			width: 29px
+			height: 29px
+			background-color: transparent
+		li
+			cursor: default
+			display: block
+			font-size: 36px
+			font-weight: 700
+			border: 1px solid $white
+			border-top: none
+			padding: 25px 22px
+			&:last-child
+				border-bottom: none
+		&-base
+			overflow-y: scroll
+			overflow-x: hidden
+			margin-right: 100px
+			width: 522px
+			height: 460px
+			padding-right: 70px
+			&::after
+				position: absolute
+				content: ''
+				height: 1px
+				width: 452px
+				background-color: $white
+				bottom: 0
+				left: 0
+		&-second
+			width: 522px
+			height: 460px
+			overflow-y: scroll
+			overflow-x: hidden
+			padding-right: 70px
+			&::after
+				position: absolute
+				content: ''
+				height: 1px
+				width: 452px
+				background-color: $white
+				bottom: 0
+				left: 0
+	&__menu.active
+		background-color: $yellow
+	&__menu
+		top: 0
+		bottom: 0
+		position: fixed
+		right: 0
+		height: 100vh
+		transition: background-color .3s 
+		background-color: $black
+		width: 70px
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		align-items: center
+	&__translation
+		margin-top: 25px
+		&-play
+			text-align: center
+			position: relative
+			margin-bottom: 30px
+			height: 51px
+			img
+				&:nth-child(2)
+				position: absolute
+				top: 48%
+				left: 52%
+				transform: translate(-50%, -50%)
+				&:nth-child(3)
+					position: absolute
+					top: 48%
+					left: 48%
+					transform: translate(-50%, -50%)
+	&__close.active
+		display: block
+		transition: all .3s
+	&__close
+		display: none
+		position: relative
+		cursor: pointer
+		width: 100%
+		height: 40px
+		&::before,&::after
+			content: ''
+			position: absolute
+			top: 17px
+			left: 17px
+			width: 34px
+			height: 2px
+			background-color: $black
+		&::before
+			transform: rotate(-45deg)
+		&::after
+			transform: rotate(45deg)
+	&__burger.active
+		display: none
+	&__burger
+		display: flex
+		width: 70px
+		align-items: center
+		flex-direction: column
+		span
+			margin: 5px 0
+			border-radius: 10px
+			height: 2px
+			background-color: $white
+			width: 34px
+	&__social
+		margin-bottom: 80px
+		display: flex
+		flex-direction: column
+		a
+			position: relative
+			width: 32px
+			height: 32px
+			background-color: $white
+			border-radius: 3px
+			&::before
+				content: ''
+				position: absolute
+				width: 32px
+				height: 32px
+				background-size: 80%
+				background-position: center
+				background-repeat: no-repeat
+				border-radius: 3px
+				left: 50%
+				top: 50%
+				transform: translate(-50%,-50%)
+			&:hover::before
+				width: 29px
+				height: 29px
+				background-color: $yellow
+		&-vk::before
+			background-image: url('../img/vk.svg')
+		&-inst::before
+			background-image: url('../img/inst.svg')
+		&-telegram::before
+			background-image: url('../img/telegram.svg')
+		&-youtube::before
+			background-image: url('../img/youtube.svg')
+		a + a
+			margin-top: 11px
+	&__social.active
+		a
+			&:hover
+				background-color: $white
+			&:hover::before
+				background-color: $yellow
+//end header
+
+//start home
+.home
+	position: absolute
+	top: 0
+	right: 70px
+	width: calc(100% - 70px)
+	background-repeat: no-repeat 
+	background-size: cover 
+	background-position: center 
+	&__inner
+		height: 100vh
+		display: flex
+		justify-content: space-between
+		font-weight: 700
+	&__welcome
+		width: 100%
+		text-align: center
+	&__logo
+		display: block
+		margin-left: 50px
+		margin-top: 40px
+		width: fit-content
+		margin-bottom: 86px
+	&__post
+		display: inline-block
+		margin 0 auto
+		width: 740px
+		font-size: 34px
+		background-color: $white
+		padding-top: 50px
+		padding-bottom: 40px
+		margin-bottom: 70px
+		text-align: center
+		border-radius: 15px
+		box-shadow: 8px 10px 40px rgba(0, 0, 0, 0.25)
+		h1
+			font-size: 52px
+			color: $yellow
+			display: block
+	&__more
+		display: block
+		width: fit-content
+		color: $black
+		margin: 0 auto
+		padding: 11px 42px
+	&__info
+		max-width: 418px
+		font-weight: 700
+		text-align: center
+	&__donat
+		.donat
+			margin-top: 45px
+			border: 1px solid $white
+			background-color: transparent
+			margin-bottom: 140px
+			&:hover
+				background-color: $yellow
+				border: 1px solid transparent
+
+	&__desc
+		padding-right: 10px
+		padding-left: 10px   
+		font-size: 24px
+		line-height: 28px
+		color: $white
+		margin-bottom: 20px
+	&__time
+		font-size: 30px
+		line-height: 35px
+		margin-bottom: 50px
+		color: $yellow
+	&__place
+		a
+			&:hover
+				background-color: $white
+				color: $black
+//end home
+
+// start mission
+.mission
+	&__inner
+		display: flex
+		justify-content: space-between
+		border-top: 1px solid $black
+		border-bottom: 1px solid $black
+		position: relative
+	&__tabs
+		display: flex
+		flex-direction: column
+		min-width: 300px
+		border: 1px solid $black
+		border-top: none
+		border-bottom: none
+		margin-right: 56px
+		a
+			box-shadow: 8px 10px 20px rgba(0, 0, 0, 0.25)
+			color: $black
+			font-size: 24px
+			padding: 26px 48px
+			padding-right: 0
+			& + a
+				border-top: 1px solid $black
+			&.active
+				background-color: $yellow
+				color: $white
+	&__desc
+		overflow-y: auto
+		padding-right: 30px
+		margin-top: 30px
+		max-height: 250px
+		p
+			font-size: 34px
+			line-height: 42px
+	&__more
+		position: absolute
+		bottom: 14px
+		left: 356px
+		a
+			color: $black
+			padding-bottom: 2px
+		&::before
+			content : ''
+			width: 100%
+			position: absolute
+			bottom: 2px
+			left: 0
+			height: 1px
+			background-color: $black
+// end mission
+
+// start homeslider
+.homeslider
+	padding-top: 50px
+	margin-left: 50px
+	margin-right: 70px
+	border-left: 1px solid $black
+	padding-left: 110px
+	padding-bottom: 20px
+	position: relative
+	h3
+		font-size: 48px
+		margin-bottom: 15px
+		position: relative
+		&::after
+			content: ''
+			position: absolute
+			height: 1px
+			width: 100%
+			background-color: $black
+			left: 400px
+			top: 50%
+			z-index: -1
+	.slider
+		display: flex
+		justify-content: space-between
+		&__item
+			outline: none
+			padding-bottom: 40px
+			&-img
+				width: 280px
+				height: 360px
+				padding-top: 40px
+				img
+					box-shadow: 8px 10px 20px rgba(0, 0, 0, 0.25)
+					width: 85%
+					height: 100%
+					object-fit: cover
+			&-name
+				transition: all .3s
+				margin-top: 10px
+				margin-bottom: 5px
+				font-size: 22px
+				font-weight: 700
+			&-desc
+				font-size: 18px
+	.slick-active + .slick-active ~ .slick-active, .slick-active + .slick-active ~ .slick-active ~ .slick-slide
+		position: relative
+		margin-right: 0
+		.slider__item-name
+			display: none
+		.slider__item-desc
+			display: none
+		.slider__item-img
+			width: 160px
+			height: 260px
+			position: absolute
+			right: 0
+			margin-top: 100px
+			img
+				width: 100%
+				box-shadow: 3px 5px 4px rgba(0, 0, 0, 0.25)
+	.slick-slide
+		margin-right: 10px
+		margin-left: 10px
+	.slick-list
+		margin-left: -10px
+		margin-right: -10px
+	.slick-list
+		width: 800px
+	.prev,.next
+		position: absolute
+		top: 160px
+		width: 60px
+		height: 60px
+		background-color: transparent
+		border-radius: 40px
+		border: 1px solid $black
+		cursor: pointer
+		transition: all .3s
+		&:hover
+			background-color: $yellow
+			border: 1px solid transparent
+			path
+				stroke: $white
+		svg
+			position: absolute
+			top: 50%
+			transform: translate(-50%, -50%)
+			width: 30px
+			height: 30px	
+			path
+				stroke: $black
+				stroke-width: 1.3px
+	.prev
+		left: 730px
+		svg
+			left: 46%
+	.next
+		left: 830px
+		svg
+			left: 54%
+// end homeslider
+
+//start petition
+.petition
+	text-align: center
+	background-repeat: no-repeat !important
+	background-size: cover !important
+	background-position: 0 60% !important
+	h3
+		padding-top: 30px
+		font-size: 70px
+		font-weight: 700
+		margin-bottom: 54px
+		color: $white
+	.petition__button
+		margin-bottom: 45px
+		padding: 10px 40px
+//end petition
+
+//start homenews and news and post
+.homenews
+	padding-top: 40px
+	h3
+		font-size: 46px
+		padding-left: 140px
+		font-weight: 700
+		margin-bottom: 40px
+	&__top
+		background-color: $yellow
+		box-shadow: 8px 10px 40px rgba(0, 0, 0, 0.25)
+		display: flex
+		padding-top: 35px
+		padding-bottom: 30px
+		margin-bottom: 60px
+		&__video
+			padding-left: 140px
+			padding-right: 66px
+		&__text
+			margin-right: 55px
+			padding-right: 15px
+			color: $white
+			overflow-y: auto
+			height: 308px
+			&-title
+				display: block
+				font-weight: 800
+				font-size: 24px
+				line-height: 27px
+				padding-bottom: 20px
+				transition: all .6s
+				&:hover
+					color: $black
+			&-body
+				font-weight: 400
+				font-size: 18px
+				line-height: 21px
+.post
+	&__items
+		display: flex
+		padding-left: 140px
+		flex-wrap: wrap
+	&__item
+		filter: grayscale(1)
+		background-repeat: no-repeat !important
+		background-position: center !important
+		background-size: cover !important
+		transition: all 1s
+		width: 390px
+		height: 350px
+		margin-right: 140px
+		position: relative
+		cursor: pointer
+		&::before
+			content: ''
+			position: absolute
+			top: 0
+			bottom: 0
+			right: 0
+			left: 0
+			background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.4) 100%)
+			background-blend-mode: normal, luminosity
+		&::after
+			content: ''
+			position: absolute
+			width: 100%
+			height: 30px
+			background-color: transparent
+			bottom: -30px
+		&:nth-child(4n-2)
+			margin-top: 200px
+			height: 460px
+		&:nth-child(4n-1)
+			margin-top: 200px
+			height: 460px
+		&:nth-child(4n)
+			margin-top: 250px
+		&:nth-child(4n+1)
+			margin-top: 250px
+		&:first-child
+			margin-top: 50px
+		&:nth-child(2)
+			margin-top: 0
+		&:hover
+			filter: grayscale(0)
+			box-shadow: 8px 10px 40px rgba(0, 0, 0, 0.25)
+			&::before
+				background: none
+			.post__item__box
+				bottom: -230px
+		&__box
+			transition: all 1s
+			max-width: 100%
+			height: 223px
+			transition: all .8s
+			position: absolute
+			padding-left: 30px
+			padding-right: 20px
+			z-index: 1
+			color: $black
+			bottom: -146px
+			overflow: hidden
+		&__title
+			max-width: 324px
+			font-weight: 800
+			font-size: 22px
+			line-height: 25px
+			margin-bottom: 6px
+			color: $black
+			overflow: hidden
+			display: -webkit-box
+			-webkit-box-orient: vertical
+			-webkit-line-clamp: 4
+		&__text
+			overflow: hidden
+			display: -webkit-box
+			-webkit-box-orient: vertical
+			-webkit-line-clamp: 5
+			max-width: 324px
+			position: relative
+			font-size: 18px
+			line-height: 21px
+.homenews__all
+	text-align: center
+	margin-top: 260px
+	font-size: 70px
+	margin-bottom: 50px
+	a
+		color: $black
+		border-bottom: 3px solid $black
+		font-weight: 700
+		transition: all .4s
+		&:hover
+			border-bottom: 3px solid grey
+			color: grey
+//end homenews
+
+//start sub
+.sub
+	background-position: center
+	background-repeat: no-repeat
+	background-size: cover
+	&__inner
+		padding-left: 50px
+		display: flex
+		justify-content: space-between
+		padding-top: 40px
+		padding-bottom: 40px
+		align-items: center
+	&__desc
+		width: 870px
+		font-size: 36px
+		line-height: 42px
+		font-weight: 700
+		color: $white
+	&__button
+		height: 42px
+		padding-right: 40px
+		padding-left: 40px
+		margin-right: 30px
+//end sub
+
+//start footer
+.footer
+	padding-left: 50px
+	background-color: $black
+	&__menu
+		padding-top: 45px
+		padding-bottom: 280px
+	&__nav
+		display: flex
+		justify-content: space-between
+		align-content: stretch
+		flex-wrap: wrap
+		font-size: 18px
+		font-weight: 700
+		font-family: 'Roboto', sans-serif
+		position: relative
+		margin-top: 40px
+		li
+			margin-right: 10px
+			a
+				transition: all .2s
+				&:hover
+					color: $yellow
+			ul
+				li
+					display: block
+					padding-top: 5px
+			&:nth-child(9),&:nth-child(10)
+				cursor: default
+				top: 80px
+				left: 0
+				position: absolute
+				ul
+					li
+						font-weight: 400
+						font-size: 14px
+						&:first-child
+							margin-top: 10px
+			&:nth-child(10)
+				left: 215px	
+	h6
+		display: block
+		margin-bottom: 20px
+		font-weight: 700
+		color: $white
+		font-size: 18px
+		font-family: 'Roboto', sans-serif
+	&__info
+		align-items: center
+		display: flex
+		justify-content: space-between
+		font-weight: 700
+		color: $white
+		margin-bottom: 100px
+		font-family: 'Roboto', sans-serif
+	&__media__info
+		display: none
+	&__contacts
+		display: flex
+	&__adress
+		margin-right: 75px
+		transition: all .2s
+		&:hover
+			a
+				color: $yellow
+		&__church
+			font-weight: 400
+			line-height: 21px
+			&__town
+				display: block
+		&__town
+			font-weight: 400
+	&__connect
+		&__phone
+			display: block
+			margin-bottom: 6px
+			transition: all .2s
+			&:hover
+				color: $yellow
+		&__mail
+			display: block
+			transition: all .2s
+			&:hover
+				color: $yellow
+	&__donat
+		font-family: 'Raleway', sans-serif
+		color: $black
+		background-color: $white
+		margin-right: 90px
+		transition: all .3s
+		&:hover
+			background-color: $yellow
+			color: $white
+	.media__donat
+		display: none
+	&__name
+		display: flex
+		font-family: 'Roboto', sans-serif
+		color: $white
+		font-size: 14px
+		justify-content: space-between
+		align-items: center
+		padding-bottom: 40px
+	&__desc
+		margin-right: 90px
+		max-width: 884px
+//end footer
+
+//developers
+.developers
+	width: 100%
+	position: relative
+	height: 72px
+	.container__fluid
+		position: absolute
+		z-index: 2
+		width: 100%
+	&__inner
+		display: flex
+		align-items: center
+		justify-content: center
+	&-logo
+		padding-top: 8px
+		padding-bottom: 8px
+		margin-right: 20px
+		img
+			width: 52px
+			height: 52px
+	h3
+		font-family: 'Montserrat', sans-serif
+		font-size: 18px
+		font-weight: 600
+		color: $white
+//end developers
+
+@import "news"
+@import "page-news"
+@import "about"
+@import "ministry"
+@import "contacts"
+@import "group"
+@import "media"
+
+
+					
+
+			
+				
+			
+			
+
+		
+    		 
+				
+
+  			
+					
+
+				
+
+		
+
+				
+
+

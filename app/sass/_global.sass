@@ -1,0 +1,342 @@
+html
+	box-sizing: border-box
+	overflow-x: hidden
+*,
+*::before,
+*::after
+	box-sizing: inherit
+body
+	overflow-x: hidden
+	background-color: $white
+	font-size: 16px
+	font-family: 'Raleway', sans-serif
+	color: $black
+	font-weight: 400
+ul,li
+	list-style: none
+	margin: 0
+	padding: 0
+a,li
+	display: inline-block
+	text-decoration: none
+	color: $white
+	&:hover
+		cursor: pointer
+h1,h2,h3,h4,h5,h6,p
+	margin: 0
+	font-size: 1em
+button
+	background-color: transparent
+	border: none
+	outline: none
+	cursor: pointer
+	font-weight: 700
+.container
+	max-width: 1920px
+	margin: 0 auto
+	padding-right: 70px
+.container__fluid
+	max-width: 1920px
+	margin: 0 auto
+.donat
+		display: inline-block
+		padding: 10px 40px
+		font-size: 18px
+		font-weight: 700
+		border-radius: 10px
+		width: fit-content
+		transition: all .3s
+.more
+	background-color: $white
+	transition: all .3s
+	border-radius: 10px
+	box-shadow: 8px 10px 40px rgba(0, 0, 0, 0.25)
+	font-size: 18px
+	&:hover
+		background-color: $yellow
+		color: $white
+.way
+	border-radius: 10px
+	background-color: $yellow
+	color: $white
+	padding: 10px 40px
+	transition: all .3s
+	&:hover
+		color: $black
+.top
+	background-repeat: no-repeat !important
+	background-size: cover !important
+	background-position: center !important
+	height: 460px
+	position: absolute
+	top: 0
+	right: 70px
+	width: calc(100% - 70px)
+//modal home
+.petition__modal.active
+	display: block
+.sub__modal.active
+	display: block
+.main__modal
+	background-color:	rgba(0, 0, 0, 0.7)
+	display: none
+	position: fixed
+	left: 0
+	top: 0
+	width: 100%
+	height: 100%
+	z-index: 1
+	&__inner
+		max-width: 610px
+		position: relative
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		background-color: $white
+		color: $black
+		font-weight: 500
+		padding: 27px
+		font-family: 'Roboto', sans-serif
+		box-shadow: 8px 10px 40px rgba(0, 0, 0, 0.25)
+	&__close
+		top: 0
+		right: 0
+		background-color: #FF2C2C
+		position: absolute
+		width: 38px
+		height: 33px
+		transition: all .3s
+		&::before,&::after
+			content: ''
+			position: absolute
+			top: 16px
+			left: 3px
+			width: 32px
+			height: 2px
+			background-color: $white
+		&::before
+			transform: rotate(-45deg)
+		&::after
+			transform: rotate(45deg)
+		&:hover::before
+			background-color: $black
+		&:hover::after
+			background-color: $black
+	&__title
+		text-align: center
+		font-size: 36px
+		margin-bottom: 54px
+	&__box
+		display: flex
+		margin-bottom: 40px
+		input
+			background-color: $white
+			border: none
+			border-bottom: 1px solid $black
+			width: 50%
+			outline: none
+			font-size: 22px
+			font-weight: 500
+	&__box input:first-child
+		margin-right: 55px
+	form
+		textarea
+			background-color: $white
+			font-size: 18px
+			height: 100px
+			width: 100%
+			border: none
+			border-bottom: 1px solid $black
+			resize: none
+			margin-bottom: 20px
+	&__telegram
+		display: flex
+		align-items: center
+		margin-bottom: 35px
+		&-desc
+			font-weight: 500
+			font-size: 18px
+			margin-right: 10px
+		a
+			transform: translateY(1px)
+			font-weight: 400
+			color: #1400FF
+			text-decoration: underline
+	&-btn
+		font-family: 'Raleway', sans-serif
+		font-size: 18px
+		margin-top: 45px
+		background-color: $black
+		border-radius: 10px
+		border: none
+		color: $white
+		padding: 10px 40px
+		width: fit-content
+		display: block
+		margin: 0 auto
+		transition: all .3s
+		&:hover
+			color: $black
+			background-color: grey
+//success modal
+.success__modal.active
+	display: block
+.success__modal
+	display: none
+	background-color:	rgba(0, 0, 0, 0.7)
+	position: fixed
+	left: 0
+	top: 0
+	width: 100%
+	height: 100%
+	z-index: 1
+	&__inner
+		max-width: 610px
+		height: 436px
+		position: relative
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		background-color: $white
+		box-shadow: 8px 10px 40px rgba(0, 0, 0, 0.25)
+		&::before
+			content: ''
+			position: absolute
+			width: 179px
+			height: 179px
+			background-color: #00FF94
+			border-radius: 50%
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
+		&::after
+			content: ''
+			position: absolute
+			background-image: url('../img/ok.png')
+			background-repeat: no-repeat
+			background-size: cover
+			background-position: center
+			width: 110px
+			height: 110px
+			top: 48%
+			left: 50%
+			transform: translate(-50%, -50%)
+//modal place
+.place__modal.active
+	display: block
+.place__modal
+	display: none
+	z-index: 1
+	background-color:	rgba(148, 148, 148, 0.7)
+	position: fixed
+	left: 0
+	top: 0
+	width: 100%
+	height: 100%
+	&__inner
+		max-width: 760px
+		position: relative
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		background-color: $white
+		color: $black
+		font-weight: 500
+		padding: 30px 30px 25px 30px
+		font-weight: 700
+		box-shadow: 8px 10px 40px rgba(0, 0, 0, 0.25)
+	&__close
+		top: 0
+		right: 0
+		background-color: #FF2C2C
+		position: absolute
+		width: 38px
+		height: 33px
+		transition: all .3s
+		&::before,&::after
+			content: ''
+			position: absolute
+			top: 16px
+			left: 3px
+			width: 32px
+			height: 2px
+			background-color: $white
+		&::before
+			transform: rotate(-45deg)
+		&::after
+			transform: rotate(45deg)
+		&:hover::before
+			background-color: $black
+		&:hover::after
+			background-color: $black
+	&__text
+		font-size: 28px
+	&__address
+		margin-bottom: 20px
+		font-size: 32px
+		color: $yellow
+	&__start
+		font-size: 30px
+		display: inline-block
+		margin-right: 5px
+	&__time
+		color: $yellow
+		font-size: 30px
+		display: inline-block
+		font-feature-settings: 'pnum' on, 'lnum' on
+		margin-bottom: 30px
+	&-btn
+		font-family: 'Raleway', sans-serif
+		font-size: 18px
+		margin-top: 45px
+		background-color: $black
+		border-radius: 10px
+		border: none
+		color: $white
+		padding: 10px 40px
+		width: fit-content
+		display: block
+		margin: 0 auto
+		transition: all .3s
+		&:hover
+			color: $black
+			background-color: grey
+//modal wait
+.place__modal__wait.active
+	display: block
+.place__modal__wait
+	background-color:	rgba(148, 148, 148, 0.7)
+	position: fixed
+	display: none
+	left: 0
+	top: 0
+	width: 100%
+	height: 100%
+	&__inner
+		max-width: 760px
+		position: relative
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		background-color: $white
+		color: $black
+		font-weight: 500
+		padding: 100px 30px 100px 90px
+		font-size: 36px
+		cursor: pointer
+		font-weight: 700
+		box-shadow: 8px 10px 40px rgba(0, 0, 0, 0.25)
+	&__text
+		position: relative
+		width: fit-content
+		&::after
+			content: ''
+			position: absolute
+			background-image: url('../img/smile.png')
+			background-repeat: no-repeat
+			background-size: cover
+			background-position: center
+			width: 100px
+			height: 100px
+			top: -28px
+			right: -110px

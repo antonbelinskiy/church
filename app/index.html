@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>church</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/simplebar.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<header class="header">
+		<div class="container__fluid">
+			<div class="header__inner">
+				<div class="header__nav__menu">
+					<div class="header__top">
+						<a class="header__top-logo" href="#">
+							<img src="img/logo.svg" alt="Слово Жизни">
+						</a>
+						<a class="header__top-donat donat" href="#">Пожертвовать</a>
+					</div>
+					<div class="header__bottom">
+						<div class="header__bottom-menu">
+
+							<ul class="header__bottom-menu-base" id="header__bottom-menu-base">
+								<li><a href="index.html">Главная</a></li>
+								<li class="sub">
+									<a href="about.html">О нас</a>
+									<ul>
+										<li><a href="about.html#belief-anchor">Во что мы верим</a></li>
+										<li><a href="about.html#reason-anchor">Ценности</a></li>
+										<li><a href="about.html#history-anchor">История</a></li>
+										<li><a href="about.html#lieder-anchor">Лидеры церкви</a></li>
+									</ul>
+								</li>
+								<li class="sub">
+										<a href="#">Богослужения</a>			
+									<ul>
+										<li><a href="child-ministry.html">Детское служение</a></li>
+										<li><a href="teen-ministry.html">Подростковое служение</a></li>
+										<li><a href="young-ministry.html">Молодёжное служение</a></li>
+										<li><a href="#">Женское служение</a></li>
+										<li><a href="#">Молитвенное </a></li>
+									</ul>
+								</li>
+								<li><a href="contacts.html">Контакты</a></li>
+								<li><a href="group.html">Домашние группы</a></li>
+							</ul>
+
+							<ul class="header__bottom-menu-base header__bottom-menu-second" id="header__bottom-menu-second">
+								<li class="sub">
+									<a href="#">Место роста</a>
+									<ul>
+										<li><a href="#">Курс исцеления души</a></li>
+										<li><a href="#">Пророческий курс</a></li>
+										<li><a href="#">Подготовка к крещению</a></li>
+										<li><a href="#">1+1</a></li>
+										<li><a href="#">Библейский курс</a></li>
+										<li><a href="#">Подготовка к браку</a></li>
+									</ul>
+								</li>
+								<li><a href="#">Забота и помощь</a></li>
+								<li><a href="news.html">Медиа</a></li>
+								<li><a href="#">Ответы на вопросы</a></li>
+								<li><a href="#">Календарь</a></li>
+							</ul>
+
+						</div>
+					</div>
+				</div>
+				<div class="header__menu modal">
+					<div class="header__translation">
+						<div class="header__translation-play">
+							<img src="img/play.png" alt="трансляция">
+							<img src="img/play1.png" alt="трансляция">
+							<img src="img/play2.png" alt="трансляция">
+						</div>
+						<div class="header__translation-inspector">
+							<img src="img/inspector.png" alt="инспектор">
+						</div>
+					</div>
+					<button class="header__close modal__close"></button>
+					<button class="header__burger open-modal">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+					<div class="header__social">
+						<a class="header__social-vk" href="#"></a>
+						<a class="header__social-inst" href="#"></a>
+						<a class="header__social-telegram" href="#"></a>
+						<a class="header__social-youtube" href="#"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<main class="home" style="background-image: url(img/mainbg.jpg);">
+		<div class="container__fluid">
+			<div class="home__inner">
+				<div class="home__welcome">
+					<a class="home__logo">
+						<img src="img/logo.svg" alt="Слово Жизни">
+					</a>
+					<div class="home__post">Добро пожаловать в церковь<h1>“Слово Жизни”</h1>
+					</div>
+					<a class="home__more more">Узнать о нас больше</a>
+				</div>
+				<div class="home__info" style="background: linear-gradient(163.8deg, rgba(255, 255, 255, 0.1) 1.09%, rgba(0, 0, 0, 0.1) 43.65%);
+				backdrop-filter: blur(20px);">
+					<div class="home__donat">
+						<a class="donat" href="#">Пожертвовать</a>
+					</div>
+					<div class="home__desc">Мы будем рады встрече с Вами в предстоящее воскресенье!</div>
+					<div class="home__time">Начало в 11.30</div>
+					<div class="home__place">
+						<a class="home__way way">Как добраться?</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<article class="mission">
+		<div class="container">
+			<div class="mission__inner">
+				<div class="mission__tabs">
+					<a href="#tab-1">
+						<h3>Во что мы верим?</h3>
+					</a>
+					<a href="#tab-2">
+						<h3>Видение</h3>
+					</a>
+					<a href="#tab-3">
+						<h3>Миссия</h3>
+					</a>
+					<a href="#tab-4""><h3>Цености</h3></a>
+				</div>
+				<div class="mission__desc">
+						<p id="tab-1">Наша церковь подобна горнице преображения, и она открыта для всех. Здесь люди переживают силу
+							Духа Святого, его исцеление, восстановление и идут исполнять великое поручение Иисуса Христа до края
+							земли.</p>
+						<p id="tab-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat rem dicta quibusdam
+							doloribus obcaecati, consequatur nam repellat accusantium ex veritatis quo inventore, atque sed, mollitia
+							et eaque fugiat? Alias, quae! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat rem dicta
+							quibusdam doloribus obcaecati, consequatur nam repellat accusantium ex veritatis quo inventore, atque sed,
+							mollitia et eaque fugiat? Alias, quae!</p>
+						<p id="tab-3">Vel sed dolores quidem voluptatum officia! Odit ratione in, magnam cupiditate deleniti nam
+							odio cumque alias quisquam maxime officia at blanditiis similique nostrum iusto praesentium repellendus
+							unde exercitationem molestias nesciunt.</p>
+						<p id="tab-4">Quisquam expedita sed exercitationem quasi libero, qui illum autem animi suscipit fuga ullam
+							itaque beatae accusantium placeat voluptas cumque, ut quod ducimus quia nostrum harum pariatur maxime
+							iure. Ea, excepturi?</p>
+				</div>
+				<div class="mission__more">
+					<a href="#">Посмотеть проповедь</a>
+				</div>
+			</div>
+		</div>
+	</article>
+
+	<section class="homeslider">
+		<div class="container">
+			<h3>Лидеры Церкви</h3>
+			<div class="slider">
+				<div class="slider__item">
+					<div class="slider__item-img">
+						<img src="img/pastor1.png" alt="Андрей Горновский">
+					</div>
+					<div class="slider__item-name">Андрей Горновский</div>
+					<div class="slider__item-desc">Пастор Церкви</div>
+				</div>
+				<div class="slider__item">
+					<div class="slider__item-img">
+						<img src="img/pastor2.png" alt="Дмитрий Петров">
+					</div>
+					<div class="slider__item-name">Дмитрий Петров</div>
+					<div class="slider__item-desc">Старший пастор</div>
+				</div>
+				<div class="slider__item">
+					<div class="slider__item-img">
+						<img src="img/pastor3.png" alt="Олег Попов">
+					</div>
+					<div class="slider__item-name">Олег Попов</div>
+					<div class="slider__item-desc">Второй пастор</div>
+				</div>
+				<div class="slider__item">
+					<div class="slider__item-img">
+						<img src="img/pastor4.png" alt="Алексей Романов">
+					</div>
+					<div class="slider__item-name">Алексей Романов</div>
+					<div class="slider__item-desc">Молодежный пастор</div>
+				</div>
+				<div class="slider__item">
+					<div class="slider__item-img">
+						<img src="img/pastor5.png" alt="Кирилл Семилетов">
+					</div>
+					<div class="slider__item-name">Кирилл Семилетов</div>
+					<div class="slider__item-desc">Региональный пастор</div>
+				</div>
+				<div class="slider__item">
+					<div class="slider__item-img">
+						<img src="img/pastor6.png" alt="Борис Готовцев">
+					</div>
+					<div class="slider__item-name">Борис Готовцев</div>
+					<div class="slider__item-desc">Пастор служения</div>
+				</div>
+			</div>
+			<button class="prev">
+				<img src="img/prev.svg" alt="стрелка в лево">
+			</button>
+			<button class="next">
+				<img src="img/next.svg" alt="стрелка в право">
+			</button>
+		</div>
+	</section>
+
+	<section class="petition"
+		style="background: linear-gradient(0deg, rgba(31, 31, 31, 0.13), rgba(31, 31, 31, 0.13)), url(img/mainbg.jpg);">
+		<div class="container">
+			<h3>Молитва о Ваших нуждах</h3>
+			<button class="petition__button more">Написать нужду</button>
+		</div>
+	</section>
+
+	<div class="main__modal petition__modal">
+		<div class="main__modal__inner">
+			<button class="main__modal__close petition__modal__close"></button>
+			<div class="main__modal__title">Молитва о Ваших нуждах </div>
+			<form>
+				<input type="hidden" name="project_name" value="церковь">
+				<input type="hidden" name="admin_email" value="gaskonez1581@gmail.com">
+				<input type="hidden" name="form_subject" value="рассылка">
+				<div class="main__modal__box">
+					<input name="имя" type="text" placeholder="Ваше имя" required>
+					<input name="номер телефона" type="text" placeholder="Номер телефона" required>
+				</div>
+				<textarea name="Сообщение" value="Message" placeholder="Текст сообщения"></textarea>
+				<div class="main__modal__telegram">
+					<div class="main__modal__telegram-desc">Телеграм чат</div>
+					<a href="https://t.me/joinchat/CvB-ChH_wn2--OiLmHok2Q"
+						target="_blank">https://t.me/joinchat/CvB-ChH_wn2--OiLmHok2Q</a>
+				</div>
+				<button class="main__modal-btn petition__modal-btn" type="submit">Отправить</button>
+			</form>
+		</div>
+	</div>
+
+	<div class="success__modal">
+		<div class="success__modal__inner">
+		</div>
+	</div>
+
+	<section class="homenews">
+		<div class="container">
+			<h3>Новости</h3>
+			<div class="homenews__top">
+				<div class="homenews__top__video">
+					<iframe width="560" height="305" src="https://www.youtube.com/embed/1OVmZqigrB4" frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+						allowfullscreen></iframe>
+				</div>
+				<div class="homenews__top__text">
+					<a class="homenews__top__text-title" href="#">Заголовок новости который может быть очень длинным... </a>
+					<p class="homenews__top__text-body">
+						Purus aliquet eget luctus fringilla magna ipsum, scelerisque ac integer.
+						Amet proin massa sed mi. Sit
+						tempus, eu aenean amet sollicitudin tellus faucibus. Morbi ante scelerisque egestas vitae eu. Purus
+						aliquet eget luctus fringilla magna ipsum, scelerisque ac integer. Amet proin massa sed mi. Sit tempus, eu
+						aenean amet sollicitudin tellus faucibus.
+					</p>
+				</div>
+			</div>
+			<div class="homenews__items post__items">
+				<a class="homenews__item post__item" href="page-news.html"
+					style="background: url(img/news.jpg);">
+					<div class="homenews__item__box post__item__box">
+						<h4 class="homenews__item__title post__item__title">Заголовок новости который 
+							может быть очень длинным...</h4>
+						<p class="homenews__item__text post__item__text">
+							Purus aliquet eget luctus fringilla magna ipsum, scelerisque ac integer.
+							Amet proin massa sed mi. Sit tempus, eu aenean amet sollicitudin tellus faucibus. Morbi ante scelerisque
+							egestas vitae eu. Sit tempus, eu aenean amet sollicitudin tellus faucibus. Morbi ante scelerisque
+							egestas vitae eu. Sit tempus, eu aenean amet sollicitudin tellus faucibus. Morbi ante scelerisque
+							egestas vitae eu.
+						</p>
+					</div>
+				</a>
+				<a class="homenews__item post__item" href="page-news.html"
+					style="background: url(img/news.jpg);">
+					<div class="homenews__item__box post__item__box">
+						<h4 class="homenews__item__title post__item__title">Заголовок новости который 
+							может быть очень длинным...</h4>
+						<p class="homenews__item__text post__item__text">
+							Purus aliquet eget luctus fringilla magna ipsum, scelerisque ac integer.
+							Amet proin massa sed mi. Sit tempus, eu aenean amet sollicitudin tellus faucibus. Morbi ante scelerisque
+							egestas vitae eu. Sit tempus, eu aenean amet sollicitudin tellus faucibus. Morbi ante scelerisque
+							egestas vitae eu. Sit tempus, eu aenean amet sollicitudin tellus faucibus. Morbi ante scelerisque
+							egestas vitae eu.
+						</p>
+					</div>
+				</a>
+				<a class="homenews__item post__item" href="page-news.html"
+					style="background: url(img/news.jpg);">
+					<div class="homenews__item__box post__item__box">
+						<h4 class="homenews__item__title post__item__title">Заголовок новости который 
+							может быть очень длинным...</h4>
+						<p class="homenews__item__text post__item__text">
+							Purus aliquet eget luctus fringilla magna ipsum, scelerisque ac integer.
+							Amet proin massa sed mi. Sit tempus, eu aenean amet sollicitudin tellus faucibus. Morbi ante scelerisque
+							egestas vitae eu. Sit tempus, eu aenean amet sollicitudin tellus faucibus. Morbi ante scelerisque
+							egestas vitae eu. Sit tempus, eu aenean amet sollicitudin tellus faucibus. Morbi ante scelerisque
+							egestas vitae eu.
+						</p>
+					</div>
+				</a>
+				<a class="homenews__item post__item" href="page-news.html"
+					style="background: url(img/news.jpg);">
+					<div class="homenews__item__box post__item__box">
+						<h4 class="homenews__item__title post__item__title">Заголовок новости который 
+							может быть очень длинным...</h4>
+						<p class="homenews__item__text post__item__text">
+							Purus aliquet eget luctus fringilla magna ipsum, scelerisque ac integer.
+							Amet proin massa sed mi. Sit tempus, eu aenean amet sollicitudin tellus faucibus. Morbi ante scelerisque
+							egestas vitae eu. Sit tempus, eu aenean amet sollicitudin tellus faucibus. Morbi ante scelerisque
+							egestas vitae eu. Sit tempus, eu aenean amet sollicitudin tellus faucibus. Morbi ante scelerisque
+							egestas vitae eu.
+						</p>
+					</div>
+				</a>
+			</div>
+			<div class="homenews__all">
+				<a href="news.html">Все</a>
+			</div>
+		</div>
+	</section>
+
+	<article class="sub"
+		style="background: linear-gradient(0deg, rgba(31, 31, 31, 0.13), rgba(31, 31, 31, 0.13)), url(img/subbg.jpg);">
+		<div class="container">
+			<div class="sub__inner">
+				<div class="sub__desc">Если Вы хотите получать смс рассылку о жизни церкви - то нажмите кнопку “Подписаться”
+				</div>
+				<button class="sub__button more">Подписаться</button>
+			</div>
+		</div>
+	</article>
+
+	<div class="main__modal sub__modal">
+		<div class="main__modal__inner">
+			<button class="main__modal__close sub__modal__close"></button>
+			<div class="main__modal__title">СМС РАССЫЛКА</div>
+			<form>
+				<input type="hidden" name="project_name" value="церковь">
+				<input type="hidden" name="admin_email" value="gaskonez1581@gmail.com">
+				<input type="hidden" name="form_subject" value="нужды">
+				<div class="main__modal__box">
+					<input name="имя" type="text" placeholder="Ваше имя" required>
+					<input name="номер телефона" type="text" placeholder="Номер телефона" required>
+				</div>
+				<textarea name="Сообщение" value="Message" placeholder="Текст сообщения"></textarea>
+				<button class="main__modal-btn sub__modal-btn" type="submit">Отправить</button>
+			</form>
+		</div>
+	</div>
+
+	<footer class="footer">
+		<div class="container footer__inner">
+			<div class="footer__media__info footer__info">
+				<div class="footer__contacts">
+					<div class="footer__adress">
+						<a class="footer__adress__church">ул. Мира 16, <span class="footer__adress__church__town">Санкт-Петербург</span></a>
+					</div>
+					<div class="footer__connect">
+						<a class="footer__connect__phone" href="tel:+7 000 000-00-00">+7 (000) 000-00-00</a>
+						<a class="footer__connect__mail" href="mailto:wolspb@gmail.com">wolspb@gmail.com</a>
+					</div>
+				</div>
+			</div>
+			<div class="footer__menu">
+				<ul class="footer__nav">
+					<li><a href="#">Главная</a></li>
+					<li><a href="about.html">О нас</a></li>
+					<li><a href="#">Ответы на вопросы</a></li>
+					<li><a href="contacts.html">Контакты</a></li>
+					<li><a href="#">Домашние группы</a></li>
+					<li><a href="#">Календарь</a></li>
+					<li><a href="#">Забота и помощь</a></li>
+					<li><a href="news.html">Медиа</a></li>
+					<li> Богослужения
+						<ul>
+							<li><a href="child-ministry.html">Детское служение</a></li>
+							<li><a href="teen-ministry.html">Подростковое служение</a></li>
+							<li><a href="young-ministry.html">Молодёжное служение</a></li>
+							<li><a href="#">Женское служение</a></li>
+							<li><a href="#">Молитвенное </a></li>
+						</ul>
+					</li>
+					<li> Место роста
+						<ul>
+							<li><a href="#">Курс исцеления души</a></li>
+							<li><a href="#">Пророческий курс</a></li>
+							<li><a href="#">Подготовка к крещению</a></li>
+							<li><a href="#">1+1</a></li>
+							<li><a href="#">Библейский курс</a></li>
+							<li><a href="#">Подготовка к браку</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<h6>Адрес</h6>
+			<div class="footer__info">
+				<div class="footer__contacts">
+					<div class="footer__adress">
+						<a class="footer__adress__church">ул. Мира 16, <span class="footer__adress__church__town">Санкт-Петербург</span></a>
+					</div>
+					<div class="footer__connect">
+						<a class="footer__connect__phone" href="tel:+7 000 000-00-00">+7 (000) 000-00-00</a>
+						<a class="footer__connect__mail" href="mailto:wolspb@gmail.com">wolspb@gmail.com</a>
+					</div>
+				</div>
+				<a class="footer__donat donat" href="#">Пожертвовать</a>
+			</div>
+			<div class="footer__name">
+				<a class="footer-logo" href="#">
+					<img src="img/logo.svg" alt="Слово Жизни">
+				</a>
+				<div class="footer__desc">Местная религиозная организация Балтийский Библейский Центр христиан веры евангельской
+					«Слово Жизни» г. Санкт-Петербурга.</div>
+			</div>
+			<a class="footer__donat donat media__donat" href="#">Пожертвовать</a>
+		</div>
+	</footer>
+
+	<article class="developers" >
+		<div class="container__fluid" style="background: linear-gradient(270deg, #2CFFB3 0%, #7B61FF 100%), #BBA89D;"">
+			<div class="developers__inner">
+				<div class="developers-logo">
+					<img src="img/VOYAGER.png" alt="VOYAGER">
+				</div>
+				<h3>Сайт разработан компанией VOYAGER</h3>
+			</div>
+		</div>
+	</article>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src='js/simplebar.min.js'></script>
+	<script src='js/slick.min.js'></script>
+	<script src='js/main.js'></script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+.page__news
+	padding-left: 50px
+	padding-right: 90px
+	h2
+		margin-top: 50px
+		margin-bottom: 20px
+		font-weight: 800
+		font-size: 36px
+		line-height: 42px
+	&__date
+		font-feature-settings: 'pnum' on, 'lnum' on
+		font-size: 24px
+		font-weight: 500
+		color: $yellow
+		padding-bottom: 25px
+		position: relative
+		margin-bottom: 50px
+		&::before
+			content: ''
+			position: absolute
+			z-index: 0
+			width: calc( 100% + 140px )
+			height: 1px
+			background-color: $black
+			bottom: 0
+			left: -50px
+	&__text
+		padding-bottom: 50px
+		font-size: 18px
+		line-height: 21px
+		p
+			margin-bottom: 20px

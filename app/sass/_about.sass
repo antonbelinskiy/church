@@ -1,0 +1,163 @@
+.about
+	h2
+		font-weight: 700
+		padding-left: 50px
+		padding-right: 50px
+		text-align: center
+		padding-top: 50px
+		padding-bottom: 60px
+		font-size: 64px
+		line-height: 84px
+	&__inner
+		display: flex
+		border-top: 1px solid $black
+		border-bottom: 1px solid $black
+	&__pastor
+		border-left: 1px solid $black
+		border-right: 1px solid $black
+		margin-left: 120px
+		padding-left: 40px
+		padding-right: 40px
+		margin-right: 60px
+		&__name
+			padding-top: 25px
+			font-weight: 700
+			font-size: 36px
+			padding-bottom: 5px
+		&__position
+			font-size: 18px
+			padding-bottom: 20px
+		&__img
+			width: 393px
+			height: 457px
+			background-repeat: no-repeat
+			background-position: center
+			background-size: cover
+			box-shadow: 8px 10px 40px rgba(0, 0, 0, 0.25)
+			margin-bottom: 40px
+	&__history
+		padding-right: 90px
+		&__name
+			font-weight: 700
+			font-size: 48px
+			padding-top: 70px
+			padding-bottom: 60px
+		&__text
+			font-size: 18px
+			line-height: 24.5px
+			padding-bottom: 20px
+			overflow-y: auto
+			max-height: 360px
+		p + p
+			padding-top: 15px
+
+//start reason
+.reason
+	padding-left: 50px
+	padding-right: 90px
+	h2
+		padding-top: 60px
+		padding-bottom: 50px
+		font-size: 48px
+	&__item
+		line-height: 25px
+		font-size: 18px
+		font-weight: 300
+		padding-bottom: 15px
+		margin-bottom: 40px
+		border-bottom: 1px solid $black
+		&__name
+			font-size: 24px
+			display: inline-block
+			padding-right: 8px
+
+//slider
+.homeslider.about
+	border-left: none
+
+//belief
+.belief
+	.container
+		padding-right: 0
+		margin-right: 70px
+		overflow-x: hidden
+		background-color: $yellow
+	h2
+		position: absolute
+		color: $white
+		font-weight: 700
+		font-size: 46px
+		top: 30px
+		left: 50px
+		&::after
+			top: 30px
+			width: 2000px
+			content: ''
+			position: absolute
+			height: 1px
+			background-color: $white
+	&__inner
+		position: relative
+		color: $white
+		display: flex
+		padding-left: 50px
+		padding-top: 60px
+	&__tabs
+		font-size: 24px
+		font-weight: 600
+		padding-right: 40px
+		border-right: 1px solid $white
+		padding-bottom: 120px
+		padding-top: 80px
+		a:last-child
+			margin-bottom: 0
+		a
+			position: relative
+			font-size: 24px
+			line-height: 23px
+			width: 500px
+			padding-bottom: 4px
+			margin-bottom: 40px
+			border-bottom: 1px solid $white
+			&::after
+				content: ''
+				position: absolute
+				width: 100%
+				height: 1px
+				background-color: $white
+				bottom: -6px
+			&::before
+				display: none
+				content: ''
+				position: absolute
+				width: 80%
+				height: 4px
+				background-color: $white
+				bottom: -5px
+			h5
+				font-weight: 600
+		a.active::before
+			display: block
+	&__desc
+		padding-right: 90px
+		margin-top: 60px
+		overflow-y: auto
+		font-size: 18px
+		line-height: 21px
+		padding-left: 65px
+		font-weight: 300
+		max-height: 435px
+		overflow-y: auto
+		p + p
+			padding-top: 15px
+		h5
+			font-size: 36px
+			font-weight: 700
+			line-height: 42px
+			padding-bottom: 20px
+
+			
+		
+
+		
+

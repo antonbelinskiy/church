@@ -1,0 +1,209 @@
+.group
+	h2
+		text-align: center
+		font-size: 72px
+		font-weight: 700
+		margin-top: 50px
+		margin-bottom: 60px
+	&__inner
+		color: $white
+		font-weight: 700
+		display: flex
+		background-color: $yellow
+		padding-top: 40px
+	&__text
+		font-size: 18px
+		line-height: 21px
+		font-weight: 300
+		max-width: 480px
+		padding-top: 45px
+		padding-left: 50px
+		padding-right: 40px
+		padding-bottom: 30px
+		border-top: 1px solid $white
+		height: 330px
+		overflow-y: auto
+		border-bottom: 1px solid $white
+		p + p
+			padding-top: 10px
+	&__statistics
+		display: flex
+		flex-wrap: wrap
+		padding-top: 45px
+		padding-bottom: 60px
+		padding-left: 100px
+		border-left: 1px solid $white
+		border-top: 1px solid $white
+		font-size: 20px
+		&__item
+			max-width: 170px
+			margin-right: 154px
+			&:last-child
+				width: 100%
+				margin-right: 0
+				margin-top: 40px
+			&-numeral
+				font-feature-settings: 'pnum' on, 'lnum' on
+				font-size: 96px
+				font-weight: 800
+			&-name
+				font-size: 18px
+				font-weight: 500
+				font-family: 'Roboto', sans-serif
+				line-height: 21px
+
+//start group__liders
+.group__liders
+	h3
+		font-size: 48px
+		font-weight: 700
+		padding: 50px 0px 50px 50px
+.group__liders__items
+	display: flex
+	flex-wrap: wrap
+	padding-left: 50px
+	padding-right: 90px
+	font-family: 'Roboto', sans-serif
+	font-size: 18px
+.group__liders
+	&__item
+		margin-right: 40px
+		margin-bottom: 50px
+		width: 287px
+		&:nth-child(3n)
+			margin-right: 0
+		&:nth-child(6n + 3)
+			margin-left: auto
+		&:nth-child(6n + 4)
+			margin-right: auto
+		&:nth-child(n + 7)
+			display: none
+	&__img
+		padding-bottom: 15px
+		img
+			width: 100%
+			height: 321px
+			object-fit: cover
+			box-shadow: 8px 10px 40px rgba(0, 0, 0, 0.25)
+	&__name
+		padding-bottom: 5px
+		font-size: 22px
+		font-weight: 700
+// 	display: none
+.group__liders__item__all
+	font-size: 72px
+	font-weight: 700
+	font-family: 'Roboto', sans-serif
+	margin-left: 50%
+	transform: translateX(-50%)
+	margin-bottom: 80px
+	transition: all .2s
+	&:hover
+		color: grey
+.group__liders__items.active
+	.group__liders__item:nth-child(n+7)
+		display: block
+.group__liders__item__all.active
+	display: none
+//map
+.group__map
+	&__box
+		position: relative
+		width: 100%
+		height: 500px
+		margin-bottom: 
+	&__button
+		position: absolute
+		width: fit-content
+		bottom: 40px
+		left: 50px
+		cursor: pointer
+		background-color: $white
+		color: $black
+		font-family: 'Roboto', sans-serif
+		font-size: 18px
+		border-radius: 5px
+		button
+			padding: 10px
+			&:first-child
+				border-radius: 5px 0 0 5px
+			&:last-child
+				border-radius: 0 5px 5px 0
+			&:hover
+				background-color: $black
+				color: $white
+		&__box
+			position: relative
+
+// connect
+.connect
+	&__inner
+		padding: 50px 90px 55px 50px
+		display: flex
+		justify-content: space-between
+		align-items: center
+	&__text
+		font-size: 46px
+		font-weight: 200
+		font-family: 'Roboto', sans-serif
+//modal
+.connect__modal.active
+	display: block
+.select
+	display: block
+	position: relative
+	margin-bottom: 50px
+	text-align: center
+.new-select
+	width: fit-content
+	position: relative
+	border-bottom: 1px solid $black
+	user-select: none
+	cursor: pointer
+	margin-left: auto
+	margin-right: auto
+	font-size: 24px
+	font-weight: 500
+	font-family: 'Roboto', sans-serif
+	color: $yellow
+	padding-bottom: 4px
+	padding-right: 30px
+	padding-left: 30px
+.new-select__list
+	position: absolute
+	top: 45px
+	left: 0
+	border: 1px solid #ced4da
+	cursor: pointer
+	width: 100%
+	z-index: 2
+	background-color: $white
+	user-select: none
+	max-height: 154px
+	overflow-y: auto
+.new-select__list.on
+	display: block
+.new-select__item span
+	display: block
+	padding: 10px 15px
+.new-select__item span:hover
+	color: $yellow
+.new-select::after
+	content: ''
+	display: block
+	width: 20px
+	height: 20px
+	position: absolute
+	right: -30px
+	top: 9px
+	background-image: url('../img/metro.png')
+	background-repeat: no-repeat
+	background-position: right center
+	background-size: cover
+	transition: all .27s
+	transform: rotate(0deg)
+.new-select.on::after
+	transform: rotate(180deg)
+.connect__modal
+	.main__modal__title
+		margin-bottom: 40px
